@@ -122,41 +122,41 @@ body {
   grid-template-rows: repeat(2, 1fr);
 }
 
-.product {
+.game {
   grid-column: span 4;
   border-radius: 30px;
   background-color: #FFFFFF;
   transition: all 1s;
 }
-.product__img {
+.game__img {
   height: 314px;
   border-radius: 30px;
 }
-.product__img_1 {
+.game__img_1 {
   background-image: url(./img/product1.jpg);
 }
-.product__img_2 {
+.game__img_2 {
   background-image: url(./img/product2.jpg);
 }
-.product__img_3 {
+.game__img_3 {
   background-image: url(./img/product3.jpg);
 }
-.product__img_4 {
+.game__img_4 {
   background-image: url(./img/product4.jpg);
 }
-.product__img_5 {
+.game__img_5 {
   background-image: url(./img/product5.jpg);
 }
-.product__img_6 {
+.game__img_6 {
   background-image: url(./img/product6.jpg);
 }
-.product__text {
+.game__text {
   padding: 32px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-.product__number {
+.game__number {
   background-color: #F7F7F7;
   border-radius: 52px;
   font-size: 1rem;
@@ -165,19 +165,19 @@ body {
   padding: 10px 16px;
   white-space: nowrap;
 }
-.product__name {
+.game__name {
   font-size: 2rem;
   font-weight: 700;
 }
-.product:hover {
+.game:hover {
   transform: scaleY(1.1);
   transform-origin: top center;
 }
-.product:hover + .product {
+.game:hover + .product {
   transform: scaleY(0.9);
   transform-origin: bottom center;
 }
-.product:has(+ .product:hover) {
+.game:has(+ .product:hover) {
   transform: scaleY(0.92);
   transform-origin: bottom center;
 }
@@ -207,21 +207,21 @@ body {
   grid-template-rows: repeat(6, 1fr);
 }
 
-.product-mini {
+.game-mini {
   grid-column: span 12;
   border-radius: 30px;
   background-color: #FFFFFF;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
-.product-mini__title {
+.game-mini__title {
   grid-column: span 6;
   padding-top: 48px;
   padding-right: 48px;
   padding-left: 48px;
   order: 1;
 }
-.product-mini__img {
+.game-mini__img {
   grid-column: span 6;
   order: 2;
   height: 500px;
@@ -231,29 +231,29 @@ body {
   background-size: cover;
   box-sizing: border-box;
 }
-.product-mini:nth-child(2n) .product-mini__title {
+.game-mini:nth-child(2n) .game-mini__title {
   order: 2;
 }
-.product-mini:nth-child(2n) .product-mini__img {
+.game-mini:nth-child(2n) .game-mini__img {
   order: 1;
 }
-.product-mini__text {
+.game-mini__text {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   padding-bottom: 36px;
 }
-.product-mini__name {
+.game-mini__name {
   font-size: 3rem;
   font-weight: 700;
 }
-.product-mini__description {
+.game-mini__description {
   font-size: 1.5rem;
   font-weight: 400;
   max-width: 457px;
   line-height: 32px;
 }
-.product-mini__button {
+.game-mini__button {
   background-color: #202027;
   border: 1px solid #202027;
   border-radius: 60px;
@@ -267,26 +267,26 @@ body {
   transition: all 1s;
   cursor: pointer;
 }
-.product-mini__button:hover {
+.game-mini__button:hover {
   background-color: white;
   color: #000000;
 }
-.product-mini__img_1 {
+.game-mini__img_1 {
   background-image: url(./img/product1.jpg);
 }
-.product-mini__img_2 {
+.game-mini__img_2 {
   background-image: url(./img/product2.jpg);
 }
-.product-mini__img_3 {
+.game-mini__img_3 {
   background-image: url(./img/product3.jpg);
 }
-.product-mini__img_4 {
+.game-mini__img_4 {
   background-image: url(./img/product4.jpg);
 }
-.product-mini__img_5 {
+.game-mini__img_5 {
   background-image: url(./img/product5.jpg);
 }
-.product-mini__img_6 {
+.game-mini__img_6 {
   background-image: url(./img/product6.jpg);
 }
 
