@@ -135,18 +135,23 @@ body{
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
 }
 
-.product{
+.game{
     grid-column: span 4;
+    overflow: hidden;
     border-radius: 30px;
     background-color: #FFFFFF;
-    transition: all 1s;
+    // transition: all 1s;
     
     &__img{
     height: 314px;
+    width: 100%;
     border-radius: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     }
 
     &__img_1{
@@ -178,15 +183,17 @@ body{
         display: flex;
         flex-direction: column;
         gap: 16px;
-
+        max-width: 314px;
     }
 
     &__number{
         background-color: #F7F7F7;
         border-radius: 52px;
         font-size: 1rem;
+        color: $text-color;
         font-weight: 500;
         width: 108px;
+        line-height: 100%;
         padding: 10px 16px;
         white-space: nowrap;
     }
@@ -194,23 +201,24 @@ body{
     &__name{
         font-size: 2rem;
         font-weight: 700;
+        color: $text-color;
     }
 
-    &:hover {
-        transform: scaleY(1.1);
-        transform-origin: top center;
+//     &:hover {
+//         transform: scaleY(1.1);
+//         transform-origin: top center;
         
-}
+// }
 
-    &:hover + .product {
-        transform: scaleY(0.9);
-        transform-origin: bottom center;
-        }
+//     &:hover + .product {
+//         transform: scaleY(0.9);
+//         transform-origin: bottom center;
+//         }
 
-    &:has(+ .product:hover) {
-        transform: scaleY(0.92);
-        transform-origin: bottom center;
-    }
+//     &:has(+ .product:hover) {
+//         transform: scaleY(0.92);
+//         transform-origin: bottom center;
+//     }
 }
 
 .games-mini{
@@ -240,7 +248,7 @@ body{
     grid-template-rows: repeat(6, 1fr);
 }
 
-.product-mini{
+.game-mini{
     grid-column: span 12;
     border-radius: 30px;
     background-color: #FFFFFF;
