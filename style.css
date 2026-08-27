@@ -119,18 +119,21 @@ body {
   display: grid;
   gap: 32px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, 1fr);
 }
 
 .game {
   grid-column: span 4;
+  overflow: hidden;
   border-radius: 30px;
   background-color: #FFFFFF;
-  transition: all 1s;
 }
 .game__img {
   height: 314px;
+  width: 100%;
   border-radius: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .game__img_1 {
   background-image: url(./img/product1.jpg);
@@ -155,31 +158,23 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 314px;
 }
 .game__number {
   background-color: #F7F7F7;
   border-radius: 52px;
   font-size: 1rem;
+  color: #202027;
   font-weight: 500;
   width: 108px;
+  line-height: 100%;
   padding: 10px 16px;
   white-space: nowrap;
 }
 .game__name {
   font-size: 2rem;
   font-weight: 700;
-}
-.game:hover {
-  transform: scaleY(1.1);
-  transform-origin: top center;
-}
-.game:hover + .product {
-  transform: scaleY(0.9);
-  transform-origin: bottom center;
-}
-.game:has(+ .product:hover) {
-  transform: scaleY(0.92);
-  transform-origin: bottom center;
+  color: #202027;
 }
 
 .games-mini {
